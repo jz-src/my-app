@@ -11,7 +11,7 @@ pipeline {
       
       stage('get sourcecode from GitHub'){
           steps{
-            sh " C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/jz-src/my-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10"
+            sh " C:\Program Files\Git\bin\git.exe fetch --tags --force --progress -- https://github.com/jz-src/my-app.git"
 
           }
 
